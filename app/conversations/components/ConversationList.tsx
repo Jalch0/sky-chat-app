@@ -63,7 +63,7 @@ const ConversationList: React.FC<ConversationListProps> = ({
           <ConversationBox
           key={item.id}
           data={item}
-          select={conversationId === item.id}
+          selected={conversationId === item.id}
           />
         ))}
       </div>

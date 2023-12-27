@@ -2,7 +2,7 @@
 
 const Body = () => {
   return (
-    <div>Body</div>
+    <div className="flex-1 overflow-y-auto">Body</div>
   )
 }
 

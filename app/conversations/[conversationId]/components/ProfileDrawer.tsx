@@ -121,7 +121,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({ isOpen, onClose, data }) 
                           hover:text-gray-500
                           focus:outline-none
                           focus:ring-2
-                          focus:ring-sky-500
+                          focus:ring-amber-500
                           focus-ring-offset-2
                           "
                             >
@@ -224,7 +224,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({ isOpen, onClose, data }) 
                                   sm:flex-shrink-0
                                   "
                                   >
-                                    Emails
+                                    Members
                                   </dt>
                                   <dd
                                   className="
@@ -234,7 +234,17 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({ isOpen, onClose, data }) 
                                   sm:col-span-2
                                   "
                                   >
-                                    {data.users.map((user) => user.email).join(', ')}
+                                    <ul>
+                                    {data.users.map((user) => (
+                                    <li className="
+                                    capitalize
+                                    mb-1
+                                    "
+                                    key={user.id}
+                                    >
+                                      {user.name}
+                                    </li>))}
+                                    </ul>
                                   </dd>
                                 </div>
                               )}
@@ -249,7 +259,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({ isOpen, onClose, data }) 
                                 sm:flex-shrink-0
                                 "
                                   >
-                                    Email
+                                    Name
                                   </dt>
                                   <dd
                                     className="
@@ -260,7 +270,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({ isOpen, onClose, data }) 
 
                                 "
                                   >
-                                    {otherUser.email}
+                                    {otherUser.name}
                                   </dd>
                                 </div>
                               )}

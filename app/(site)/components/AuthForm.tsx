@@ -93,7 +93,7 @@ const AuthForm = () => {
   return (
     <div
       className="
-          mt-8
+          mt-5
           sm:mx-auto
           sm:w-full
           sm:max-w-md
@@ -139,13 +139,13 @@ const AuthForm = () => {
               />
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="bg-white px-2 text-gray-500">Or continue with</span>
+              <span className="bg-white px-2 text-gray-500">Continue with</span>
             </div>
           </div>
 
           <div className="mt-6 flex gap-2">
-            <AuthSocialButton icon={BsGithub} onClick={() => socialAction("github")} />
-            <AuthSocialButton icon={BsGoogle} onClick={() => socialAction("google")} />
+            <AuthSocialButton icon={BsGithub} onClick={() => socialAction("github")} type="github"/>
+            <AuthSocialButton icon={BsGoogle} onClick={() => socialAction("google")} type="google"/>
           </div>
         </div>
 
@@ -160,7 +160,7 @@ const AuthForm = () => {
         "
         >
           <div>
-            {variant === 'LOGIN' ? 'New to messenger?' : 'Already have an account?'}
+            {variant === 'LOGIN' ? 'New to SkyChat?' : 'Already have an account?'}
           </div>
           <div
           onClick={toggleVariant}

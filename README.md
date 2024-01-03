@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center"> 
+    <img src="https://drive.google.com/uc?export=download&id=1diDpkdadEnYG7Rdc4ozfAUN9uA1UVDyj" alt="Logo" width="80" height="80">
+    <h1>Sky Chat</h1>
+</div>
 
-## Getting Started
+This is a real-time chat that can be used by any person and business, with a brief installation and sufficient knowledge you can adapt this project and transform it however you want.
 
-First, run the development server:
+With a minimalist design and some functions such as registration and login with GitHub and Google, and internally the application has the advantage of creating groups, changing profile images, sending messages simultaneously with another user, and also knowing if the user is active and has read your message.
 
+
+
+
+## Tech Stack
+
+**This app was built with:** NextJS, TypeScript, Tailwind CSS, Prisma and MongoDB.
+
+
+## Installation
+
+This document and application is developed for Nextjs version 14.0.4.
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+    git clone https://github.com/Jalch0/sky-chat-app.git
+```
+2. Install the NPM packages
+```bash
+    npm install
+```
+3. Create new file .env and add your database in MongoDB
+```bash
+    DATABASE_URL="ENTER YOUR DATABASE"
+```
+4. Setup prisma
+```bash
+    npx prisma db push
+```
+5. Create new file .env and add your api keys
+```bash
+    NEXTAUTH_SECRET="NEXTAUTH_SECRET"
+    GITHUB_ID="ENTER YOUR API"
+    GITHUB_SECRET="ENTER YOUR API"
+    GOOGLE_CLIENT_ID="ENTER YOUR API"
+    GOOGLE_CLIENT_SECRET="ENTER YOUR API"
+    NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="ENTER YOUR API"
+    NEXT_PUBLIC_PUSHER_APP_KEY="ENTER YOUR API"
+    PUSHER_APP_ID="ENTER YOUR API"
+    PUSHER_SECRET="ENTER YOUR API"
+```
+4. Finally run the project
+```bash
+    npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    
+## Screenshots
 
-## Learn More
+![App Screenshot](https://drive.google.com/uc?export=download&id=1NTe5l32bXPIgRI_2W-bzI4AoINOk2q-7)
 
-To learn more about Next.js, take a look at the following resources:
+![App Screenshot](https://drive.google.com/uc?export=download&id=1bGXbHJi_Q4Rcjn9DlvOo97VjY219b4jE)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![App Screenshot](https://drive.google.com/uc?export=download&id=1CtvcklGClh1gS1gscYgUbIJSvgpVftUV)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![App Screenshot](https://drive.google.com/uc?export=download&id=1cCHy6zFQdFl5LW3sJNTKNaMpsaT89qNE)
 
-## Deploy on Vercel
+![App Screenshot](https://drive.google.com/uc?export=download&id=1fS3Erl5sNKqf1WSjHqPw8IuKZwyPGjzF)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Feedback
+
+If you have any feedback, please reach out to us at jlabradorchacon@gmail.com
+
+
+## Acknowledgements
+
+ - [Next Auth](https://next-auth.js.org/)
+ - [Next Cloudinary](https://next.cloudinary.dev/)
+ - [Pusher](https://pusher.com/)
+ - [React Icons](https://react-icons.github.io/react-icons/)
+ - [React Hot Toast](https://react-hot-toast.com/)
+ - [Clsx](https://www.npmjs.com/package/clsx)
+
+

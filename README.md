@@ -7,7 +7,7 @@ This is a real-time chat that can be used by any person and business, with a bri
 
 With a minimalist design and some functions such as registration and login with GitHub and Google, and internally the application has the advantage of creating groups, changing profile images, sending messages simultaneously with another user, and also knowing if the user is active and has read your message.
 
-
+You can access the site from here: [SkyChat](https://sky-chat-app.vercel.app/)
 
 
 ## Tech Stack

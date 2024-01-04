@@ -47,9 +47,9 @@ const EmptyState = () => {
             </div>
             <div className="mb-5">
               <p className="text-sm text-gray-500 text-start">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Blanditiis minus totam deleniti dolorum maxime magnam incidunt
-                iure inventore sunt iste suscipit.
+                This is a real-time chat that can be used by any person and business, 
+                with a brief installation and sufficient knowledge you can adapt this project 
+                and transform it however you want.
               </p>
             </div>
             <div className="flex gap-2 text-sm">
